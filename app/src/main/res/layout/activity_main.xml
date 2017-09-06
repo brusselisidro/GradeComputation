@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brussel.gradecomputation.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Quiz 1"
+        android:textSize="10pt"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/Q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter quiz 1"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/LE"
+        android:layout_alignStart="@+id/LE"
+        android:layout_alignRight="@+id/ME"
+        android:layout_alignEnd="@+id/ME"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="80dp"
+        android:text="Quiz 2"
+        android:textSize="10pt"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/Q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter quiz 2"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/Q1"
+        android:layout_alignEnd="@+id/Q1"
+        android:layout_alignLeft="@+id/Q1"
+        android:layout_alignStart="@+id/Q1"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="110dp"
+        android:text="Seatworks"
+        android:textSize="10pt"
+        android:id="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/SW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter seatworks"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/Q2"
+        android:layout_alignStart="@+id/Q2"
+        android:layout_alignRight="@+id/Q2"
+        android:layout_alignEnd="@+id/Q2"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lab Exercises"
+        android:textSize="10pt"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/SW"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/LE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter lab exercises"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/ME"
+        android:layout_alignStart="@+id/ME"
+        android:layout_alignRight="@+id/ME"
+        android:layout_alignEnd="@+id/ME"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Major Exam"
+        android:textSize="10pt"
+        android:layout_alignBaseline="@+id/ME"
+        android:layout_alignBottom="@+id/ME"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/ME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:hint="Enter Major exams"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:onClick="callSecondActivity"
+        android:layout_below="@+id/ME"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+
+</RelativeLayout>
